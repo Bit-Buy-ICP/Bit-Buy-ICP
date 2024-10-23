@@ -36,7 +36,7 @@ dfx canister --help
 ```
 
 ## Working
-  The system will obtain the images uploaded by the user, run them through our ai model which will detect duplication on the images, if unique, the image will be granted a unique hash for that specific user, and the buyer will enjoy the advantages of the escrow to ensure their good are delivered
+  The system will obtain the images uploaded by the user, run them through our ai model to detect if the images are duplicates, if unique, the image will be granted a unique hash for that specific user, and the buyer will enjoy the advantages of the escrow to ensure their products are delivered
 
 ## Running the project locally
 
