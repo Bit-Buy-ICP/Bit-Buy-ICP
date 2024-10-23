@@ -1,7 +1,7 @@
-use candid::{CandidType, Deserialize};  // Correct Candid import
+use candid::{CandidType, Deserialize};  // Correct Candid import , deserialization
 use ic_cdk_macros::{query, update, init};  // Ensure all necessary macros are imported
 use sha2::{Sha256, Digest};  // For hashing the image data
-use std::collections::HashMap;
+use std::collections::HashMap; //the hashmap
 use std::sync::RwLock;
 
 #[derive(CandidType, Deserialize, Clone, Debug)]
@@ -38,7 +38,7 @@ fn init() {
 
 // Function to upload an image, hash it, and store property data
 #[update]
-fn upload_property(
+fn upload_property( //uploading an image
     property_id: String,
     property_type: PropertyType,
     image_data: Vec<u8>,
